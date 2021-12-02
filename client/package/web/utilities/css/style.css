@@ -1,0 +1,224 @@
+@font-face{
+    font-family: "Ghetto";
+
+    src: url("../fonts/Ghetto.otf");
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.heading{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+
+    margin-top: 2%;
+    padding: 10px;
+}
+.container{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-top: 0px;
+    padding: 20px;
+    border-color: black;
+}
+.teamcontainer{
+    border: solid;
+    border-width: 1px;
+    border-left: 0px;
+    border-top: 0px;
+    text-align: center;
+    padding: 10px;
+    border-color: black;
+}
+
+.teamcontainerleft{
+    border: solid;
+    border-width: 1px;
+    border-top: 0px;
+    text-align: center;
+    padding: 10px;
+    border-color: black;
+}
+
+.gangwarstats{
+    max-width: 200px;
+}
+
+.listview.view-table .node-data{
+    text-align: right;
+    padding: 0.0 0.5rem;
+}
+
+.carcontainer{
+    background-color: #fff;
+    border: solid;
+    border-width: 1px;
+    border-left: 0px;
+    border-top: 0px;
+    padding: 20px;
+}
+
+.carcontainerleft{
+    background-color: #fff;
+    border: solid;
+    border-width: 1px;
+    border-top: 0px;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: CoolveticaRg-Regular;
+    src: local("Coolvetica Rg"),
+         local("CoolveticaRg-Regular"),
+         url("../mif/coolvetica.ttf");
+    font-weight: bold;
+}
+
+.kill-popup{
+
+    margin-top: 2%;
+    padding: 4.5%;
+    width: max-content;
+    font-size: 20px;
+
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.288);
+    font-family: CoolveticaRg-Regular;
+
+    transform: scale(0.0) scaleZ(0.0);
+    transition: all 300ms;
+}
+
+.kill-in{
+    transform: scale(1.0) scaleZ(1.0);
+}
+
+.kill-out{
+    transform: scale(0.0) scaleZ(0.0);
+}
+
+.scrollbar {
+    width:100%;
+    max-width:100%;
+    height:350px;
+
+    overflow-y:scroll;
+}
+
+/* customize scrollbar css */
+#scrollbar-custom::-webkit-scrollbar{
+    width:12px;
+
+}
+#scrollbar-custom::-webkit-scrollbar:horizontal{
+    height:12px;
+}
+#scrollbar-custom::-webkit-scrollbar-track{
+    border:1px #787878 solid;
+    border-radius:10px;
+    -webkit-box-shadow:0 0 6px #c8c8c8 inset;
+}
+#scrollbar-custom::-webkit-scrollbar-thumb{
+    background-color:#b03c3f;
+    border:1px solid #000000;
+    border-radius:16px;
+}
+#scrollbar-custom::-webkit-scrollbar-thumb:hover{
+    background-color:#bf4649;
+    border:1px solid #333333;
+}
+#scrollbar-custom::-webkit-scrollbar-thumb:active{
+    background-color:#a6393d;
+    border:1px solid #333333;
+}
+
+@keyframes animation {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.animated{
+    margin-top: 20px;
+    animation: animation 4s ease-in-out infinite;
+}
+
+.hit_left{
+    position: absolute;
+    left: 25%;
+
+    top: 50%;
+    margin-top: -149.5px;
+}
+
+.hit_right{
+    position: absolute;
+    right: 25%;
+
+    top: 50%;
+    margin-top: -149.5px;
+}
+
+.hit_top{
+    position: absolute;
+    top: 5%;
+
+    left: 50%;
+    margin-left: -149.5px;
+}
+
+.hit_bottom{
+    position: absolute;
+    bottom: 5%;
+
+    left: 50%;
+    margin-left: -149.5px;
+}
+
+.hit_center{
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+    width: 150px;
+}
+
+.marker{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+.marker_img{
+    width: 100px;
+    height: 100px;
+}
+
+.donation_iframe{
+    width: 100%;
+    height: 100%;
+
+    margin-left: 0%;
+    margin-top: 0%;
+    overflow-y: hidden;
+}
+
+.donation{
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+}

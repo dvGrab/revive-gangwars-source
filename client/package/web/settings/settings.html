@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+    <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <div class="grid">
+        <div class="row flex-justify-center">
+            <div class="cell-4 heading bg-darkheader">
+                <h1>Waffeneinstellungen <div class="mif-add place-right" style="margin-top: 5px;"></div>
+                    </h2>
+            </div>
+
+        </div>
+        <div class="row flex-justify-center">
+
+
+            <div class="cell-4 bg-dark border-left border-right border-bottom bd-black p-5">
+                <div style="" class="scrollbar" id="scrollbar-custom">
+                    <ul id="lv" class="w-100" data-role="listview" data-view="table" data-on-node-click="changeState">
+                    </ul>
+                </div>
+
+                <br>
+                <div class="text-center"><button class="button success" onclick="sendWeapon();">Aktivieren /
+                        Deaktivieren</button>
+                    <button class="button alert" onclick="exitWeapon();">Verlassen</button></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../utilities/js/jquery.js"></script>
+    <script src="../utilities/js/metro.js"></script>
+    <script src="./settings.js"></script>
+
+</body>
+
+</html>

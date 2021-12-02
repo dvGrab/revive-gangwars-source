@@ -1,0 +1,65 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <link  type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+        <link  type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+        <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="grid">
+            
+            <div class="row flex-justify-center">
+
+                    <img class="animated" src="../utilities/images/logo.png" />
+
+            </div>
+
+            <div class="row flex-justify-center">
+
+                <div class="cell-3 heading bg-darkheader">
+                        <h1>Login <div class="mif-user-check place-right" style="margin-top: 5px;"></div></h2>
+                </div>
+        
+            </div>
+
+            <div class="row flex-justify-center">
+                <div class="cell-3 container bg-dark">
+
+
+                        <a onclick="translateGerman();" class="button alert">Deutsch</a> 
+                        <a onclick="translateEnglish();" class="button alert">English</a> 
+                        <a onclick="translateRussian();" class="button alert">русский</a><br><br>
+                                  
+
+                        <label id="labelUsername">Benutzername:</label>
+                        <input type="text" id="inputUsername" data-role="input" data-prepend="<span class='mif-user'></span>"> 
+
+                        <label id="labelPassword">Passwort:</label>
+                        <input type="password" id="inputPassword" data-role="input" data-prepend="<span class='mif-key'></span>"><p></p>  
+                        
+                        <input id="rememberMe" type="checkbox" data-role="checkbox" data-caption="Autologin"><p>
+
+                        <button class="button dark" id="buttonLogin" type="button" autofocus>Login</button>
+                        <a href="./register.html" id="buttonRegister" class="button alert">zur Registration</a>
+                        <a href="./reset.html" id="buttonRegister" class="button warning">Passwort vergessen?</a><br><br>
+
+                        <p></p>
+
+                        <hr>
+
+                        <div class="text-small text-center">www.revive-gangwars.net</div>
+
+                </div>
+            </div> 
+
+        </div>
+
+        <script src="../utilities/js/jquery.js"></script>
+        <script src="../utilities/js/metro.js"></script>
+        <script src="weblogin.js"></script>
+
+    </body>
+</html>

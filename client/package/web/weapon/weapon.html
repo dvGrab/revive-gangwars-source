@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+    <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <div class="grid">
+            <div class="row flex-justify-center" style="margin-top: 1%">
+                    <button onclick="buttonExit();" class="button alert">Verlassen</button>
+                </div>
+            
+        <div class="row flex-justify-center" style="margin-top: 15%">
+            <div class="cell-2 bg-dark border bd-black p-5">
+
+                Hier findest du alle Erweiterungen der derzeitig ausgewählten Waffen.  <br><br>Metallschrott benötigt: 250<br><br>
+
+                <label id="labelCarshop">Erweiterung:</label>
+                <select data-role="select" size="3" id="ComponentValue">
+
+                </select>
+                <button class="button success" type="button" onclick="buttonBuyComponent();">Herstellen</button>
+                <button class="button alert" type="button" onclick="buttonSellComponent();">Zerstören</button>
+            </div>
+            <div class="cell-5">
+
+
+            </div>
+            <div class="cell-2 bg-dark border bd-black p-5">
+
+                Hier findest du alle verfügbaren Farben deiner ausgewählten Waffe.  <br><br>Metallschrott benötigt: 100<br><br>
+
+                <label id="labelCarshop">Farbe:</label>
+                <select data-role="select" size="3" id="TintValue">
+
+                </select>
+                <button class="button success" type="button" onclick="buttonBuyTint();">Lackieren</button>
+                <button class="button alert" type="button" onclick="buttonSellTint();">Entfernen</button>
+            </div>
+        </div>
+
+    
+        <div class="row flex-justify-center" style="margin-top: 15%">
+            <div class="cell-2 ">
+                <center>
+                    <input id="xRotation" data-role="slider" data-max="180" data-value="76" data-hint="true"
+                        data-hint-always="false">
+                    <button onclick="buttonLeft();" class="button success">
+                        <<br>
+                    </button>
+                    <div style="display: contents;" class="fg-black text-bold">
+                    </div>
+
+                    <button onclick="buttonRight();" class="button success">></button>
+            
+                   
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <script src="../utilities/js/jquery.js"></script>
+    <script src="../utilities/js/metro.js"></script>
+    <script src="./weapon_web.js"></script>
+
+</body>
+
+</html>

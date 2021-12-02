@@ -1,0 +1,131 @@
+@font-face {
+    font-family: CoolveticaRg-Regular;
+    src: local("Coolvetica Rg"),
+         local("CoolveticaRg-Regular"),
+         url("../fonts/coolvetica.ttf");
+    font-weight: bold;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	-webkit-font-smoothing: antialiased;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-size: 14px;
+	-webkit-user-select: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.ui_element {
+	display: none;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 2;
+}
+
+#chat {
+	display: block;
+	z-index: 0;
+	color: white;
+	color: rgb(255, 255, 255);
+	line-height: 30px;
+	text-shadow: 1px 1px 0 rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+	font-family: CoolveticaRg-Regular;
+	font-size: 16px;
+	letter-spacing: 0.4px;
+	margin-left: 15px;
+}
+
+@media screen and (min-height: 1080px) {
+	#chat {
+		font-size: 18px!important;
+	
+	}
+}
+
+#chat ul#chat_messages {
+	overflow: hidden;
+	height: 285px;
+	margin-top: 2vh;
+	transform: rotate(180deg);
+	width: 37vw;
+	padding: 10px 20px;
+	list-style-type: none;
+}
+
+#chat ul#chat_messages>li {
+	transform: rotate(-180deg);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-button {
+  width: 76px;
+  height: 76px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 93px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 75px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+#chat input#chat_msg {
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+	outline: none;
+	border: none;
+	font-family: CoolveticaRg-Regular;
+	font-size: 13px;
+	line-height: 35px;
+	width: 35vw;
+	padding: 5px 5px 5px 15px;
+}
+
+#chat_channels li {
+	float: left;
+	border: 1px solid black;
+	list-style-type: none;
+	padding: 5px 15px;
+	margin: 5px 5px 0px 0px;
+	text-transform: uppercase;
+	font-size: 13px;
+	text-shadow: none;
+}
+
+#chat_channels li#active {
+	color: rgb(165, 69, 165);
+}

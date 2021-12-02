@@ -1,0 +1,24 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2018",                         
+    "module": "commonjs",                    
+    "resolveJsonModule": true,               
+    "esModuleInterop": true,                 
+    "outDir": "../../server-files/packages/roleplay",     
+    "strict": true,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true
+  },
+
+  "include": [
+      "./server/**/*",
+      "./libs/*",
+      "./node_modules/*"
+    
+  ]
+}

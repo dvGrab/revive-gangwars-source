@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+    <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="grid">
+
+        <div class="row flex-justify-center" style="margin-top: 5%;">
+
+            <div class="cell-3 heading bg-darkheader">
+                <h1>Spawn <div class="mif-map2 place-right" style="margin-top: 5px;"></div>
+                    </h2>
+            </div>
+
+        </div>
+
+        <div class="row flex-justify-center">
+            <div class="cell-3 container bg-dark text-center">
+
+                <button onclick="mapSelectorLeft()" type="button" class="button alert mr-5 mb-4"><</button> 
+                
+                <div style="display: inline-block; font-family: 'Ghetto'">
+                        <h1>
+                            <div id="mapText" style="display: inline-block;"></div>
+                        </h1>
+            </div>
+
+            <button type="button" onclick="mapSelectorRight()" class="button alert ml-5 mb-4">></button>
+
+            <br>
+        
+            <button type="button" onclick="mapAccept()" class="button alert">Bestätigen</button>
+
+            <br>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="../utilities/js/jquery.js"></script>
+    <script src="../utilities/js/metro.js"></script>
+    <script src="map.js"></script>
+
+</body>
+
+</html>

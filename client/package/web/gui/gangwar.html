@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link  type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+        <link  type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+        <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <div class="grid">
+            <div class="row flex-justify-center">
+                    <img src="../utilities/images/logo.png" />
+            </div>
+            <div class="row flex-justify-center">
+                <div class="cell-4 heading bg-darkheader">
+                        <h1>Gangwar <div class="mif-alarm-on place-right" style="margin-top: 5px;"></div></h2>
+                </div>
+        
+            </div>
+            <div class="row flex-justify-center">
+                <div class="cell-4 container bg-dark">
+
+                    <div class="text-center">
+
+                        <div id="currentwar" style="display: contents;">Diese Zone gehört den:</div> <b><div style="display: contents;" id="team">{TEAM}</div></b><p></p>
+
+                        <div id="lastwar" style="display: contents;">Der letze Bandenkrieg war gegen:</div> <b><div style="display: contents;" id="lastteam">{TEAM}</div></b><p></p>
+
+                    </div>
+                </div>
+            </div>  
+            <div class="row flex-justify-center">
+                <div class="cell-4 container bg-dark">
+
+                    <div class="text-center">
+
+                        <div class="button alert" id="buttonStartWar" type="button">Krieg!</div> 
+                        <div class="button dark" id="buttonCloseWindow" type="button">Verlassen</div>    
+                        
+                    </div>
+
+                </div>
+            </div>             
+        </div>
+
+        <script src="../utilities/js/jquery.js"></script>
+        <script src="../utilities/js/metro.js"></script>
+        <script src="../utilities/js/gangwar.js"></script>
+
+    </body>
+</html>

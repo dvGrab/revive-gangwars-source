@@ -1,0 +1,235 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+    <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <div class="grid ml-10">
+        <div class="row flex-justify-center">
+
+        </div>
+        <div class="row">
+            <div class="cell-3 heading bg-darkheader">
+                <h1>Charakter <div class="mif-user place-right" style="margin-top: 5px;"></div>
+                    </h2>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="cell-3 border-left border-right border-bottom bd-black fg-black bg-dark">
+
+                <nav data-role="ribbonmenu" class="p-5">
+                    <ul class="tabs-holder">
+                        <li><a id="dns" href="#one">Gene</a></li>
+                        <li><a id="nose" href="#two">Nase</a></li>
+                        <li><a id="eyes" href="#three">Augen</a></li>
+                        <li><a id="face" href="#four">Gesichtszüge</a></li>
+                        <li><a id="cosmetic" href="#five">Kosmetik</a></li>
+                    </ul>
+
+                    <div class="content-holder">
+                        <div class="section" id="one">
+                            <p class="p-4 mx-auto w-100">
+
+                                <label id="labelFather">Vater:</label>
+                                <input id="father" data-role="slider" data-min="0" data-max="45" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelMother">Mutter:</label>
+                                <input id="mother" data-role="slider" data-min="0" data-max="45" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelFatherblend">Anteile des Vaters:</label>
+                                <input id="fatherblend" data-role="slider" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelMotherblend">Anteile der Mutter:</label>
+                                <input id="motherblend" data-role="slider" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelMixture">Vermischung der Gene:</label>
+                                <input id="mixture" data-role="slider" data-max="100" data-hint="true" data-hint-always="false">
+
+                                <label id="labelNeck">Nackenbreite:</label>
+                                <input id="neck" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelHaircolor">Haarfarbe:</label>
+                                <input id="haircolor" data-role="slider" data-value="-1" data-min="0" data-max="60"
+                                    data-hint="true" data-hint-always="false">
+
+
+                                <br>
+                                <button id="buttonMale" onclick="selectMale();" class="button warning place-right">Männlich</button>
+                                <button id="buttonFemale" onclick="selectFemale();" class="button warning" >Weiblich</butto>
+                                    <br>
+
+                            </p>
+                        </div>
+                        <div class="section" id="two">
+                            <p class="p-4 mx-auto w-100">
+
+                                <label id="labelnose_width">Nasenbreite:</label>
+                                <input id="nose_width" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelnose_height" >Nasenhöhe:</label>
+                                <input id="nose_height" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelnose_length">Nasenlänge:</label>
+                                <input id="nose_length" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelnose_bridge">Nasenbein:</label>
+                                <input id="nose_bridge" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label  id="labelnose_tip">Nasenspitze:</label>
+                                <input id="nose_tip" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelnose_shift">Nasenkrümmung:</label>
+                                <input id="nose_shift" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                            </p>
+                        </div>
+                        <div class="section" id="three">
+                            <p class="p-4 mx-auto w-100">
+                                <label id="labelbrow_height">Augenbrauenhöhe:</label>
+                                <input id="brow_height" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelbrow_width">Augenbrauenbreite:</label>
+                                <input id="brow_width" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labeleyes">Augenöffnung:</label>
+                                <input id="eyes" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                            </p>
+                        </div>
+                        <div class="section" id="four">
+                            <p class="p-4 mx-auto w-100">
+                                <label id="labelcheck_height">Wangenknochenhöhe:</label>
+                                <input id="check_height" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelcheck_width">Wangenknochenbreite:</label>
+                                <input id="check_width" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelchecks_width">Wangenbreite:</label>
+                                <input id="checks_width" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labeljaw_width">Kieferbreite:</label>
+                                <input id="jaw_width" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labeljaw_height">Kieferhöhe:</label>
+                                <input id="jaw_height" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelchin_length">Kinnlänge:</label>
+                                <input id="chin_length" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelchin_position">Kinnposition:</label>
+                                <input id="chin_position" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelchin_width">Kinnbreite:</label>
+                                <input id="chin_width" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labelchin_shape">Kinnform:</label>
+                                <input id="chin_shape" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                                <label id="labellips">Lippen:</label>
+                                <input id="lips" data-role="slider" data-min="-100" data-max="100" data-hint="true"
+                                    data-hint-always="false">
+
+                            </p>
+                        </div>
+                        <div class="section" id="five">
+                            <p class="p-4 mx-auto w-100">
+                                <label id="labelblemishes">Flecken:</label>
+                                <input id="blemishes" data-role="slider" data-value="-1" data-min="-1" data-max="23"
+                                    data-hint="true" data-hint-always="false">
+
+                                <label id="labelfacialhair">Gesichtsbehaarung:</label>
+                                <input id="facialhair" data-role="slider" data-value="-1" data-min="-1" data-max="28"
+                                    data-hint="true" data-hint-always="false">
+
+                                <label id="labeleyebrows">Augenbrauen:</label>
+                                <input id="eyebrows" data-role="slider" data-value="-1" data-min="0" data-max="33"
+                                    data-hint="true" data-hint-always="false">
+
+                                <label id="labelageing">Altersmerkmale:</label>
+                                <input id="ageing" data-role="slider" data-value="-1" data-min="-1" data-max="14"
+                                    data-hint="true" data-hint-always="false">
+
+                                <label id="labelmakeup">Makeup:</label>
+                                <input id="makeup" data-role="slider" data-value="-1" data-min="-1" data-max="73"
+                                    data-hint="true" data-hint-always="false">
+
+                                <label id="labelblush">Blush:</label>
+                                <input id="blush" data-role="slider" data-value="-1" data-min="-1" data-max="6"
+                                    data-hint="true" data-hint-always="false">
+
+                                <label id="labelcomplexion">Teint:</label>
+                                <input id="complexion" data-role="slider" data-value="-1" data-min="-1" data-max="11"
+                                    data-hint="true" data-hint-always="false">
+
+                                <label id="labelsundamage">Sommersprossen:</label>
+                                <input id="sundamage" data-role="slider" data-value="-1" data-min="-1" data-max="10"
+                                    data-hint="true" data-hint-always="false">
+
+                                <label id="labellipstick">Lippenstift:</label>
+                                <input id="lipstick" data-role="slider" data-value="-1" data-min="-1" data-max="9"
+                                    data-hint="true" data-hint-always="false">
+
+                                <label id="labelholes">Akne:</label>
+                                <input id="holes" data-role="slider" data-value="-1" data-min="-1" data-max="17"
+                                    data-hint="true" data-hint-always="false">
+
+                                <label id="labelbodyhair">Brusthaare:</label>
+                                <input id="bodyhair" data-role="slider" data-value="-1" data-min="-1" data-max="16"
+                                    data-hint="true" data-hint-always="false">
+
+                            </p>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell-3 border-left border-right border-bottom bd-black text-center p-5 bg-dark">
+
+                <span class="mif-loop2 ani-spin"></span>
+                <input id="rotation" data-role="slider" data-value="180" data-max="360"><br>
+                <button id="buttonAccept" class="button success" onclick="acceptCustomization();">Erstellen</button>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="../utilities/js/jquery.js"></script>
+    <script src="../utilities/js/metro.js"></script>
+    <script src="../utilities/js/customization.js"></script>
+
+</body>
+
+</html>

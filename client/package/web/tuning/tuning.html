@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+    <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <div class="grid ml-10">
+
+        <div class="row flex-justify-end mr-5">
+            <div class="cell-3 heading bg-darkheader ">
+                <h1>Tuning <div class="mif-wrench place-right" style="margin-top: 5px;"></div>
+                    </h2>
+            </div>
+
+        </div>
+        <div class="row flex-justify-end mr-5">
+            <div class="cell-3 border-left border-right border-bottom bd-black fg-black bg-dark">
+
+
+                <nav data-role="ribbonmenu" class="p-5">
+                    <ul class="tabs-holder">
+                        <li><a href="#one">Kosmetisches</a></li>
+                        <li><a href="#two">Neon</a></li>
+                        <li><a href="#three">Farben</a></li>
+                        <li><a href="#four">Motor</a></li>
+                    </ul>
+
+                    <div class="content-holder">
+                        <div class="section" id="one">
+                            <p id="cosmetics_1" class="p-4 mx-auto w-100">
+
+                            </p>
+                        </div>
+                        <div class="section" id="two">
+                            <p id="neonlist" class="p-4 mx-auto w-100">
+
+                            </p>
+                        </div>
+                        <div class="section" id="three">
+                            <p id="colors" class="p-4 mx-auto w-100">
+
+                            </p>
+                        </div>
+                        <div class="section" id="four">
+                            <p id="motorlist" class="p-4 mx-auto w-100">
+
+                            </p>
+                        </div>                        
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+        <div class="row flex-justify-end mr-5">
+            <div class="cell-3 border-left border-right border-bottom bd-black text-center p-5 bg-dark">
+                <label id="costs">Derzeitige Kosten: 0 Fahrzeugteile</label>
+                <input id="rotation" data-role="slider" data-on-move="sendRotation" data-value="260" data-max="360">
+                <button id="buttonAccept" class="button success" onclick="BuyCartuning();">Anwenden</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../utilities/js/jquery.js"></script>
+    <script src="../utilities/js/metro.js"></script>
+    <script src="./tuning.js"></script>
+
+</body>
+
+</html>

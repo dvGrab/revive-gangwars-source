@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+    <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <div id="isVisible" style="display: none">
+
+        <div class="grid">
+            <div class="row flex-justify-center">
+                <img src="../utilities/images/logo.png" />
+            </div>
+            <div class="row flex-justify-center">
+                <div class="cell-4 heading bg-darkheader">
+                    <h1>
+                        <div id="headerInventory" style="display: contents;">Inventar</div>
+                        <div class="mif-shopping-basket place-right" style="margin-top: 5px;"></div>
+                        </h2>
+                </div>
+
+            </div>
+            <div class="row flex-justify-center">
+                <div class="cell-2 p-5 bg-white border-left border-right border-bottom bd-black  bg-dark">
+                    <div style="" class="scrollbar" id="scrollbar-custom">
+                        <ul id="lv" class="w-100" data-role="listview" data-view="table"
+                            data-structure='{"amount": true}'>
+
+                        </ul>
+                    </div>
+
+                    <p></p>
+                    <div class="text-center">
+                        <button id="buttonUse" class="button success" onclick="useItem();">Verwenden</button>
+                        <button id="buttonExit" class="button alert" onclick="exitInventory();">Verlassen</button>
+                    </div>
+
+                </div>
+                <div class="cell-2 p-5 bg-white border-right border-bottom bd-black  bg-dark">
+                    <div style="" class="scrollbar" id="scrollbar-custom">
+                        <ul id="lvPlayers" class="w-100" data-role="listview" data-view="table">
+                        </ul>
+                    </div>
+                    <p></p>
+
+                    <input id="giveAmount" style="position: block;" class="place-right" maxlength="3" type="text"
+                        data-role="input" data-size="200">
+                    <button id="buttonGive" class="button success " onclick="sendItem();">Geben</button>
+
+
+                </div>
+            </div>
+
+            <div class="row flex-justify-center">
+                <div class="cell-4 p-5 bg-white border-left border-right border-bottom bd-black bg-dark">
+                    <div class="text-center">
+                        <button id="buttonGive" class="button success "
+                            onclick="openSettings();">Waffenrucksack</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../utilities/js/jquery.js"></script>
+    <script src="../utilities/js/metro.js"></script>
+    <script src="./inventory_web.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+    <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="grid">
+
+        <div class="row flex-justify-center">
+
+            <img src="../utilities/images/logo.png" />
+
+        </div>
+
+
+
+        <div class="row flex-justify-center">
+            <div class="cell-3 container bg-dark">
+                <div class="row flex-justify-center">
+
+                    <div class="p-10">
+                        <table>
+                            <td>
+                                <div class="text-center">
+                                    <h1>
+                                        <img class="ani-heartbeat"
+                                            style="position: absolute; margin-left: -60px; margin-top: -30px;"
+                                            width="120px" src="../utilities/images/misc/goldstar.png" />
+                                        <div class="text-bold" id="playerLevel">0</div>
+
+                                    </h1>
+
+                                    <div class="text-bold mt-10" id="playerPrestige">Prestige: 0</div>
+                                </div>
+                            </td>
+                        </table>
+                    </div>
+                </div>
+                <div class="row flex-justify-center">
+                    <div class="cell">
+                        <hr>
+                        <div class="place-left" id="playerExp"></div>
+                        <div class="place-right" id="playerNeededExp"></div><br>
+                        <div data-role="progress" data-value="0" data-cls-bar="bg-blue" id="playerProgess"></div>
+                    </div>
+                </div>
+                <div id="nextWeapon" class="row flex-justify-center">
+                    <div class="cell">
+                        <hr>
+                        <div class="text-center">
+                            Nächste Errungenschaft:<br>
+
+                            <img id="weaponImage" src="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row flex-justify-center">
+                    <div class="cell text-center">
+                        <hr>
+                        <button class="button success" id="buttonPrestige" type="button"
+                            onclick="prestigeLevel();">Prestige</button>
+
+                        <button class="button alert" id="buttonExit" type="button"
+                            onclick="exitLeveling();">Verlassen</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="../utilities/js/jquery.js"></script>
+        <script src="../utilities/js/metro.js"></script>
+        <script src="leveling_web.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link  type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+        <link  type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+        <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <div class="grid">
+
+            <div class="row flex-justify-center">
+                    <img src="../utilities/images/logo.png" />
+            </div>
+            <div class="row flex-justify-center">
+                <div class="cell-3 heading bg-darkheader">
+                        <h1><div id="playerMenu" style="display: contents;">Spielermenu</div><div class="mif-info place-right" style="margin-top: 5px;"></div></h2>
+                </div>
+        
+            </div>
+            <div class="row flex-justify-center">
+                
+                <div class="cell-3 border-bottom border-left border-right bd-black container bg-dark fg-black">
+                    <div class="flex-justify-center p-4">
+                            <nav data-role="ribbonmenu">
+                                    <ul class="tabs-holder">
+                                       
+                                        <li><a id="stats" href="#section-one">Statistik</a></li>
+                                        <li><a id="warns" href="#section-two">Verwarnungen</a></li>
+
+                                    </ul>
+                                
+                                    <div class="content-holder">
+                                        <div class="section" id="section-one">
+                                            <div class="p-4">
+
+                                                <h3 id="labelPersonal">Persönlich:</h3>
+                                                <b id="playtime">Spielzeit:</b><div id="statPlaytime">0</div>
+                                                <b>Kills:</b><div id="statKills">0</div>
+                                                <b id="deaths">Tode:</b><div id="statDeaths">0</div>
+                                                <b>K/D:</b><div id="statRatio">0.0</div>
+                                                <hr>
+                                                <h3>Gangzone:</h3>
+                                                <b>Kills in Gangwar:</b> <div id="statKillsGang">0</div>
+                                                <b id="gwdeaths">Tode in Gangwar:</b><div id="statDeathsGang">0</div>
+                                                <b>Gangwar K/D:</b> <div id="statRatioGang">0.0</div>
+
+                                            </div>
+                                        </div>
+                                        <div class="section" id="section-two">
+                                           
+                                        </div>
+                                        <div class="section" id="section-three">
+                                        
+                                        </div>
+                                    </div>
+                                    <p></p>
+                                    <button class="button alert" id="buttonExit">Verlassen</button>
+                                </nav>
+                    </div>
+                </div>               
+            </div>
+        </div>
+
+        <script src="../utilities/js/jquery.js"></script>
+        <script src="../utilities/js/metro.js"></script>
+        <script src="menu_web.js"></script>
+
+    </body>
+</html>

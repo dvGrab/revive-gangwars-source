@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link  type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+        <link  type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+        <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <div class="grid">
+            <div class="row flex-justify-center">
+                    <img src="../utilities/images/logo.png" />
+            </div>
+            <div class="row flex-justify-center">
+                <div class="cell-6 heading bg-darkheader">
+                        <h1><div  id="headerCarshop" style="display: contents;">Fahrzeugladen</div> <div class="mif-automobile place-right" style="margin-top: 5px;"></div></h2>
+                </div>
+        
+            </div>
+            <div class="row flex-justify-center">
+                <div class="cell-3 carcontainerleft bg-dark bd-black">
+
+                    <div id="carshopMain">Wähle ein Fahrzeug aus um es zu besetzen.<br>
+                    Sollte dein Fahrzeug länger als 3 Minuten nicht besetzt sein, wird es Abgeschleppt.</div><p></p>
+                    <br>
+                    <label id="labelCarshop">Fahrzeug:</label>
+                    <select data-role="select" size="3" id="vehicleValue">
+                              
+                    </select>
+                    <button class="button dark" type="button" id="buttonVehicle">Ausparken</button>
+                    <button class="button alert" type="button" id="buttonExit">Verlassen</button>
+                    <button class="button warning place-right" type="button" id="buttonSell">Verkaufen</button> <br> 
+                    <hr>
+                  
+                </div>
+                <div class="cell-3 carcontainer bg-dark bd-black">
+
+                    <div id="secondCarshopText">Hier kannst du die Fahrzeuge mit Fahrzeugtokens kaufen.<br> Die Fahrzeuge hast du dann immer.</div><p></p><br>
+
+                    <label><div id="vehicleTokenLabel">Fahrzeug</div> (Tokens: <div id="tokenAmount"  style="display: contents;"></div>):</label>
+                    <select data-role="select" size="3" id="vehicleListToPay">
+                    </select>
+                    <button class="button dark" type="button" id="buttonVehicleBuy">Kaufen</button>
+                    <hr>
+                </div>           
+            </div>      
+        </div>
+
+        <script src="../utilities/js/jquery.js"></script>
+        <script src="../utilities/js/metro.js"></script>
+        <script src="../utilities/js/carshop.js"></script>
+
+    </body>
+</html>

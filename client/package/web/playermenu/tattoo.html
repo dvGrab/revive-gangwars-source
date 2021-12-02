@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+    <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <div class="grid">
+
+
+        <div class="row ml-15" style="margin-top: 15%">
+            <div class="cell-3 bg-dark border bd-black p-5">
+
+                Bitte wähle dein Körperteil für den Tattoo aus und selektiere es mit den Pfeilen. ($10000)<br><br>
+
+                <label id="labelCarshop">Körperteile:</label>
+                <select data-role="select" size="3" id="zoneValue" data-on-change="changedTattooZone">
+                        <option value="0">Oberkörper</option>
+                        <option value="2">Linker Arm</option>
+                        <option value="3">Rechter Arm</option>
+                        <option value="4">Linkes Bein</option>
+                        <option value="5">Rechtes Bein</option>
+                </select>
+
+                <br>
+
+                <!--<div style="position: relative;" class="fg-green text-bold text-center" id="tattooText">Frei</div>-->
+                <button onclick="buttonLeft();" class="button success place-left">
+                    <<br>
+                </button>
+                
+                <button onclick="buttonRight();" class="button success place-right">></button><br><br>
+                
+                
+                <input id="xRotation" data-role="slider" data-max="360" data-value="0" data-hint="true"
+                data-hint-always="false"><br>
+
+                <button class="button success" onclick="placeTattoo();">Tattoowieren</button> <button class="button alert" onclick="exitShop();">Verlassen</button>
+            </div>
+        </div>
+
+
+        <div class="row flex-justify-center" style="margin-top: 15%">
+            <div class="cell-2 ">
+                <center>
+
+
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <script src="../utilities/js/jquery.js"></script>
+    <script src="../utilities/js/metro.js"></script>
+    <script src="./tattooeditor.js"></script>
+
+</body>
+
+</html>

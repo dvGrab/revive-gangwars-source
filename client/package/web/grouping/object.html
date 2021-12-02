@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+
+    <style>
+        @font-face {
+            font-family: 'Pricedown Bl';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Pricedown Bl'), local('Pricedown Bl'), url(../mif/pricedown.ttf) format('ttf');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="grid">
+
+        <div class="row flex-justify-center">
+
+            <img src="../utilities/images/logo.png" />
+
+        </div>
+
+        <div class="row flex-justify-center ">
+
+
+            <div class="cell-8 text-center" style="margin-top: 25%;">
+
+                <button onclick="leftObject();" class="button success" style="margin-right: 400px;">
+                    <</button> <button onclick="rightObject();" class="button success">>
+                </button><br>
+            </div>
+
+            <div class="cell-8 text-center" style="margin-top: 3%;">
+                <button id="buttonAgree" class="button alert">Auswählen</button>
+            </div>
+            <div class="cell-8 text-center" style="">
+                <span id="textPrice" style="font-size: 52px;" class="ani-flash fg-yellow">Preis: 0$</span>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="../utilities/js/jquery.js"></script>
+    <script src="../utilities/js/metro.js"></script>
+    <script src="object_web.js"></script>
+
+</body>
+
+</html>

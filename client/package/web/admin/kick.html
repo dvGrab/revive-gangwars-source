@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+    <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <div class="grid">
+        <div class="row flex-justify-center">
+            <img src="../utilities/images/logo.png" />
+        </div>
+        <div class="row flex-justify-center">
+            <div class="cell-4 heading bg-darkheader">
+                <h1>Kick/Ban <div class="mif-hammer place-right" style="margin-top: 5px;"></div>
+                    </h2>
+            </div>
+
+        </div>
+        <div class="row flex-justify-center">
+            <div class="cell-4 container bg-dark">
+                <label>Spieler:</label>
+                <input type="text" id="playerSelection" />
+                </select>
+                <label>Grund:</label>
+                <input type="text" id="reasonText" />
+                <p>
+
+                </p>
+                <p></p>
+                <button class="button" id="dropdown_toggle_1" onclick="buttonClicked();">Bannen?</button>
+                <div class="pos-relative">
+
+                    <div class="" data-no-close="true" data-role="dropdown" data-toggle-element="#dropdown_toggle_1">
+                        <hr></hr>
+                        <label>Zeit in Angabe:</label>
+                        <input type="text" id="timeAmount" />
+                        <input type="radio" data-style="2" value="0" data-role="radio" name="typeOfBan" data-caption="Minuten">
+                        <input type="radio" data-style="2" value="1" data-role="radio" name="typeOfBan" data-caption="Stunden">
+                        <input type="radio" data-style="2" value="2" data-role="radio" name="typeOfBan" data-caption="Tage"><br>
+                        <input type="radio" data-style="2" value="3" data-role="radio" name="typeOfBan" data-caption="Permanent"><br>
+                    </div>
+                </div>
+
+                <p></p>
+
+                <button class="button dark" type="button" onclick="Agree();">Bestätigen</button>
+                <button class="button alert" type="button" onclick="Exit();">Verlassen</button><br>
+            </div>
+        </div>
+    </div>
+
+    <script src="../utilities/js/jquery.js"></script>
+    <script src="../utilities/js/metro.js"></script>
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

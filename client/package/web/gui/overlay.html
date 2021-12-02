@@ -1,0 +1,146 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+    <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+    <meta charset="utf-8">
+
+    <style>
+        .noselection {
+            user-select: none;
+        }
+
+        .color_bloods {
+            -webkit-filter: drop-shadow(1px 1px 5px rgba(255, 0, 0, 255));
+        }
+
+        .color_vagos {
+            -webkit-filter: drop-shadow(1px 1px 5px rgba(0, 0, 200, 255));
+        }
+
+        .color_grove {
+            -webkit-filter: drop-shadow(1px 1px 5px rgba(0, 200, 20, 255));
+        }
+
+        .color_ballas {
+            -webkit-filter: drop-shadow(1px 1px 5px rgba(155, 0, 255, 255));
+        }
+
+
+        #text {
+            color: #999999;
+            text-shadow: 2px 2px 2px #000000;
+            position: absolute;
+            top: 135;
+            left: 64;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body class="noselection">
+    <script src='https://code.responsivevoice.org/responsivevoice.js'>
+    </script>
+
+    <div class="mif-mic" id="voiceSymbol"></div>
+
+    <div id="kickMessage" style="display: none;">
+        <div class="row flex-justify-center">
+
+            <div class="cell-3 heading bg-darkheader">
+                <h1>Kick<div class="mif-hammer place-right" style="margin-top: 5px;"></div>
+                    </h2>
+            </div>
+
+        </div>
+
+        <div class="row flex-justify-center">
+            <div class="cell-3 container bg-dark">
+
+                <div class="text-center">
+                    Du wurdest vom Server gekickt.<br>
+                    <b>Grund:
+                        <div style="display:inline;" id="reasonText">Unbekannt</div>
+                    </b>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row flex-justify-center">
+
+        <div id="main" style="position: absolute;">
+            <div id="kill" class="flex-align-center">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="showGangwarStats">
+
+        <div class="row flex-justify-center" style="margin-top: 42%">
+
+            <div class="cell-3">
+                <div id="attacker" style="position: absolute; margin-left: 250;">
+                    <img src="../utilities/images/icons/skull.png"></img>
+
+                    <div id="text">
+                        <b>
+                            <div id="attackerText" class="fg-yellow"></div>
+                        </b>
+                    </div>
+                </div>
+
+                <div id="victim">
+                    <img src="../utilities/images/icons/skull.png"></img>
+
+                    <div id="text">
+                        <b>
+                            <div id="victimText" class="fg-yellow"></div>
+                        </b>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="hit_left" class="hit_left" style="display: none;">
+        <div class="hit_center">
+            <img src="../utilities/images/indicators/indicator_left.png">
+        </div>
+    </div>
+
+    <div id="hit_right" class="hit_right" style="display: none;">
+        <div class="hit_center">
+            <img src="../utilities/images/indicators/indicator_right.png">
+        </div>
+    </div>
+
+    <div id="hit_top" class="hit_top" style="display: none;">
+        <div class="hit_center">
+            <img src="../utilities/images/indicators/indicator_top.png">
+        </div>
+    </div>
+
+    <div id="hit_bottom" class="hit_bottom" style="display: none;">
+        <div class="hit_center">
+            <img src="../utilities/images/indicators/indicator_bottom.png">
+        </div>
+    </div>
+
+
+    <div id="hit_marker" class="marker" style="display: none;">
+        <img class="marker_img" src="../utilities/images/misc/crosshair.png">
+    </div>
+
+    <script src="../utilities/js/jquery.js"></script>
+    <script src="../utilities/js/metro.js"></script>
+    <script src="../utilities/js/main.js"></script>
+</body>
+
+</html>

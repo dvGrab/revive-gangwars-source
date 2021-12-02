@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="../utilities/css/metro-all.css">
+    <link type="text/css" rel="stylesheet" href="../utilities/css/style.css">
+    <link id="color-scheme" href="../utilities/css/schemes/red-dark.css" rel="stylesheet">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <div class="grid">
+        <div class="row flex-justify-center">
+            <img src="../utilities/images/logo.png" />
+        </div>
+        <div class="row flex-justify-center">
+            <div class="cell-4 heading bg-darkheader">
+                <h1>Gruppenerstellung <div class="mif-users place-right" style="margin-top: 5px;"> <button class="button alert" onclick="closeGrouping();">X</button></div>
+                </h2>
+            </div>
+
+        </div>
+        <div class="row flex-justify-center">
+            <div class="cell-4 p-5 bg-white border-left border-right border-bottom bd-black bg-dark">
+
+                <div id="mainTextCreate">Hier kannst du dir eine Gruppe für $500 erstellen.
+                In dieser Gruppe kannst du dann bis zu 10 Mitspieler einladen.
+                Als Gruppe kannst du dir Appartments kaufen in denen ihr euch aufhalten könnt.
+                Gleichzeitig kann ein Appartment auch als Spawn genutzt werden.</div><br><br>
+                <label id="labelGroupname">Gruppenname:</label><br>
+                <input id="groupName" type="text" data-role="input"><br>
+
+                <div class="text-center">
+                    <button id="buttonCreate" onclick="createGroup();" class="button success">Erstellen</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../utilities/js/jquery.js"></script>
+    <script src="../utilities/js/metro.js"></script>
+    <script src="./grouping_web.js"></script>
+
+
+</body>
+
+</html>
